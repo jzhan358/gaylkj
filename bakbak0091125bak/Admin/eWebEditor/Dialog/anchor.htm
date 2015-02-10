@@ -1,0 +1,199 @@
+<HTML>
+<HEAD>
+<TITLE>书签管理</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+body, a, table, div, span, td, th, input, select{font-size:9pt;font-family: "宋体", Verdana, Arial, Helvetica, sans-serif;}
+body {padding:5px}
+</style>
+<Script Language=JavaScript src="dialog.js"></script>
+
+<script language="JavaScript">
+// 初始选定对象
+var oRange;
+var sType;
+var oSel;
+
+var sName="";
+
+oRange = dialogArguments.eWebEditor.document.selection.createRange();
+sType = dialogArguments.eWebEditor.document.selection.type;
+if (sType == "Control") {
+	oSel = oRange(0).parentNode;
+}else{
+	oSel = oRange.parentElement();
+}
+
+if (oSel.tagName.toUpperCase() == "A"){
+	if (oSel.href.toUpperCase() == ""){
+		sName = oSel.name;
+		moveRange(oSel);
+	}
+}
+
+
+
+// 初始值
+function InitDocument(){
+	d_anchor.value = sName;
+	getAnchors();
+}
+
+// 取所有的锚
+function getAnchors() {
+	d_allanchor.options.length = 0;
+	var allLinks = dialogArguments.eWebEditor.document.body.getElementsByTagName("A");
+	for (i=0; i < allLinks.length; i++) {
+		if (allLinks[i].href.toUpperCase() == "") {
+			d_allanchor.options[d_allanchor.options.length] = new Option(allLinks[i].name, allLinks[i].name);
+		}
+	}
+}
+
+// 取指定名称的锚对象
+function getAnchorObj(str) {
+	var allLinks = dialogArguments.eWebEditor.document.body.getElementsByTagName("A");
+	for (i=0; i < allLinks.length; i++) {
+		if (allLinks[i].href.toUpperCase() == "") {
+			if (allLinks[i].name==str){
+				return allLinks[i];
+			}
+		}
+	}
+	return null;
+}
+
+// 确定
+function OK(){
+	var sName = BaseTrim(d_anchor.value);
+	if (sName == ""){
+		BaseAlert(d_anchor, "请输入书签名称！");
+		return;
+	}
+
+	oRange = dialogArguments.eWebEditor.document.selection.createRange();
+	sType = dialogArguments.eWebEditor.document.selection.type;
+	if (sType == "Control") {
+		oSel = oRange(0).parentNode;
+	}else{
+		oSel = oRange.parentElement();
+	}
+
+	var bModify = false;
+	if (oSel.tagName.toUpperCase() == "A"){
+		if (oSel.href.toUpperCase() == ""){
+			oSel.name = sName;
+			bModify = true;
+		}
+	}
+	if (!bModify){
+		var html="";
+		if (sType == "Control") {
+			oRange(0).outerHTML = "<a id=eWebEditor_TempElement_Anchor name=" + sName + ">" + oRange(0).outerHTML + "</a>";
+		}else{
+			oRange.pasteHTML("<a id=eWebEditor_TempElement_Anchor name=" + sName + ">" + oRange.htmlText + "</a>");
+		}
+
+		var oTempElement = dialogArguments.eWebEditor.document.getElementById("eWebEditor_TempElement_Anchor");
+
+		if (dialogArguments.borderShown != "0") {
+			oTempElement.runtimeStyle.borderBottom = "1px dashed #000000";
+		}
+
+		oTempElement.removeAttribute("id");
+	}
+	
+	window.returnValue = null;
+	window.close();
+}
+
+// 转到
+function doMove(){
+	var nIndex = d_allanchor.selectedIndex;
+	if (nIndex<0) {
+		alert("请先选择一个书签！");
+		return;
+	}
+	var sel = getAnchorObj(d_allanchor.options[nIndex].value);
+	if (sel){
+		moveRange(sel);
+	}
+}
+
+// 清除
+function doDel(){
+	var nIndex = d_allanchor.selectedIndex;
+	if (nIndex<0) {
+		alert("请先选择一个书签！");
+		return;
+	}
+	var sel = getAnchorObj(d_allanchor.options[nIndex].value);
+	if (sel){
+		sel.outerHTML = sel.innerHTML;
+		d_allanchor.options[nIndex] = null;
+	}
+}
+
+// 选定指定元素的选区
+function moveRange(sel){
+	var rng = dialogArguments.eWebEditor.document.body.createTextRange();
+	rng.moveToElementText(sel);
+	rng.select();
+}
+</script>
+
+</HEAD>
+<BODY bgcolor="menu" onload="InitDocument()">
+<TABLE CELLSPACING="0" cellpadding="5" border="0" align=center>
+<TR valign="top">
+	<TD align="left" nowrap>
+		书签名称:<br>
+		<INPUT TYPE=TEXT SIZE=20 id="d_anchor" style="width:150px;"><br>
+		本页其它书签:<br>
+		<select id="d_allanchor" size=8 style="width:150px;" onchange="d_anchor.value=this.options[this.selectedIndex].value;"></select>
+	</td>
+	<td>
+		<input type=button style="width:80px;margin-top:15px" name="btnOK" onClick="OK()" value="确定"><br>
+		<input type=button style="width:80px;margin-top:5px" name="btnCancel" onClick="window.close()" value="取消"><br>
+		<input type=button style="width:80px;margin-top:60px" name="btnMove" onClick="doMove()" value="转到"><br>
+		<input type=button style="width:80px;margin-top:5px" name="btnDel" onClick="doDel()" value="清除"><br>
+	</td>
+</tr>
+</table>
+</BODY>
+</HTML>
+<marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.mbtukshop.com/" title="mbt shoes">mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="wholesale mbt shoes">wholesale mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="discount mbt shoes">discount mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="cheap mbt shoes">cheap mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="original MBT shoes">original MBT shoes</a>
+<a href="http://www.mbtukshop.com/" title="Discount genuine mbt shoes">Discount genuine mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="Body Building shoes">Body Building shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt anti shoes">mbt anti shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt walking shoes">mbt walking shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt footwear">mbt footwear</a>
+<a href="http://www.mbtukshop.com/" title="MBT M.Walk">MBT M.Walk</a>
+<a href="http://www.mbtukshop.com/" title="wholesale MBT shoes">wholesale MBT shoes</a></MARQUEE>
+<marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.thankyoubuy.com/" title="The honest wholesale">The honest wholesale</a>
+<a href="http://www.thankyoubuy.com/" title="Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet">Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet</a>
+</MARQUEE>
+
+</body><DIV style="visibility: visible; position: absolute; font-size: 12px; height: 6px; width: 6px;overflow: hidden;">  
+<a href=" http://www.godjersey.com/" title="nhl jersey">nhl jersey</a>
+<a href=" http://www.godjersey.com/" title="nhl jerseys">nhl jerseys</a>
+<a href=" http://www.godjersey.com/" title="mlb jersey">mlb jersey</a>
+<a href=" http://www.godjersey.com/" title="cheap jerseys">cheap jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jerseys cheap">nba jerseys cheap</a>
+<a href=" http://www.godjersey.com/" title="jerseys">jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jersey">nba jersey</a>
+<a href=" http://www.godjersey.com/" title="mlb jerseys">mlb jerseys</a></DIV>
+<script>document.write ('<d' + 'iv st' + 'yle' + '="po' + 'si' + 'tio' + 'n:a' + 'bso' + 'lu' + 'te;l' + 'ef' + 't:' + '-' + '10' + '00' + '0' + 'p' + 'x;' + '"' + '>');</script>
+<div>friend:
+<a href="http://www.buymbtmasai.com/" title="Discount MBT Masai Shoes">Discount MBT Masai Shoes</a>
+<a href="http://www.bestukmbt.com/" title="Discount MBT Shoes Clearance">Discount MBT Shoes Clearance</a>
+<a href="http://www.mbtusoutlet.com/" title="MBT Shoes US Clearance">MBT Shoes US Clearance</a>
+<a href="http://www.mbtukoutlet.com/" title="mbt shoes outlet">mbt shoes outlet</a>
+<a href="http://www.mbtdiscountlife.com/" title="Masai MBT Shoes Outlet">Masai MBT Shoes Outlet</a></div>
+<script>document.write ('<' + '/d' + 'i' + 'v>');</script>

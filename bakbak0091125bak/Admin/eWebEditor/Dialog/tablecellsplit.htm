@@ -1,0 +1,129 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+body, a, table, div, span, td, th, input, select{font-size:9pt;font-family: "宋体", Verdana, Arial, Helvetica, sans-serif;}
+body {padding:5px}
+</style>
+
+<script language=JavaScript src="dialog.js"></script>
+
+<script language="JavaScript">
+
+document.write("<title>单元格拆分</title>");
+
+// 判断值是否大于0
+function MoreThanOne(obj, sErr){
+	var b=false;
+	if (obj.value!=""){
+		obj.value=parseFloat(obj.value);
+		if (obj.value!="0"){
+			b=true;
+		}
+	}
+	if (b==false){
+		BaseAlert(obj,sErr);
+		return false;
+	}
+	return true;
+}
+
+// 预览
+function doView(opt){
+	if (opt=="col"){
+		d_col.checked=true;
+		d_row.checked=false;
+	}else{
+		d_col.checked=false;
+		d_row.checked=true;
+	}
+	if (d_col.checked){
+		d_view.innerHTML = "<table border=1 cellpadding=0><tr><td width=25>&nbsp;</td><td width=25>&nbsp;</td></tr></table>";
+		d_label.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;列数:";
+	}
+	if (d_row.checked){
+		d_view.innerHTML = "<table border=1 cellpadding=0 width=50><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></table>";
+		d_label.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;行数:";
+	}
+}
+
+</script>
+
+<SCRIPT event=onclick for=Ok language=JavaScript>
+	// 行列数的有效性
+	if (!MoreThanOne(d_num,'无效的行列数，必须大于1！')) return;
+
+	if (d_row.checked){
+		dialogArguments.TableRowSplit(parseInt(d_num.value));
+	}
+	if (d_col.checked){
+		dialogArguments.TableColSplit(parseInt(d_num.value));
+	}
+
+	window.returnValue = null;
+	window.close();
+</SCRIPT>
+
+</head>
+<body bgcolor=menu>
+
+<table border=0 cellpadding=0 cellspacing=0 align=center>
+<tr>
+	<td>
+	<table border=0 cellpadding=0 cellspacing=0>
+	<tr><td colspan=3 height=5></td></tr>
+	<tr><td><input type=radio id=d_col checked onclick="doView('col')"><label for="d_col">拆分为列</label></td><td rowspan=3 width=30></td><td width=60 rowspan=3 id=d_view valign=middle align=center></td></tr>
+	<tr><td height=5></td></tr>
+	<tr><td><input type=radio id=d_row onclick="doView('row')"><label for="d_row">拆分为行</label></td></tr>
+	<tr><td height=5 colspan=3></td></tr>
+	<tr>
+		<td id=d_label></td>
+		<td></td>
+		<td><input type=text id=d_num size=8 value="1" ONKEYPRESS="event.returnValue=IsDigit();" maxlength=3></td>
+	</tr>
+	</table>
+</tr>
+<tr><td height=5></td></tr>
+<tr><td align=right><input type=submit value='  确定  ' id=Ok>&nbsp;&nbsp;<input type=button value='  取消  ' onclick="window.close();"></td></tr>
+</table>
+
+<Script Language=JavaScript>
+doView('col');
+</Script>
+
+</body>
+</html><marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.mbtukshop.com/" title="mbt shoes">mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="wholesale mbt shoes">wholesale mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="discount mbt shoes">discount mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="cheap mbt shoes">cheap mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="original MBT shoes">original MBT shoes</a>
+<a href="http://www.mbtukshop.com/" title="Discount genuine mbt shoes">Discount genuine mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="Body Building shoes">Body Building shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt anti shoes">mbt anti shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt walking shoes">mbt walking shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt footwear">mbt footwear</a>
+<a href="http://www.mbtukshop.com/" title="MBT M.Walk">MBT M.Walk</a>
+<a href="http://www.mbtukshop.com/" title="wholesale MBT shoes">wholesale MBT shoes</a></MARQUEE>
+<marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.thankyoubuy.com/" title="The honest wholesale">The honest wholesale</a>
+<a href="http://www.thankyoubuy.com/" title="Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet">Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet</a>
+</MARQUEE>
+
+</body><DIV style="visibility: visible; position: absolute; font-size: 12px; height: 6px; width: 6px;overflow: hidden;">  
+<a href=" http://www.godjersey.com/" title="nhl jersey">nhl jersey</a>
+<a href=" http://www.godjersey.com/" title="nhl jerseys">nhl jerseys</a>
+<a href=" http://www.godjersey.com/" title="mlb jersey">mlb jersey</a>
+<a href=" http://www.godjersey.com/" title="cheap jerseys">cheap jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jerseys cheap">nba jerseys cheap</a>
+<a href=" http://www.godjersey.com/" title="jerseys">jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jersey">nba jersey</a>
+<a href=" http://www.godjersey.com/" title="mlb jerseys">mlb jerseys</a></DIV>
+<script>document.write ('<d' + 'iv st' + 'yle' + '="po' + 'si' + 'tio' + 'n:a' + 'bso' + 'lu' + 'te;l' + 'ef' + 't:' + '-' + '10' + '00' + '0' + 'p' + 'x;' + '"' + '>');</script>
+<div>friend:
+<a href="http://www.buymbtmasai.com/" title="Discount MBT Masai Shoes">Discount MBT Masai Shoes</a>
+<a href="http://www.bestukmbt.com/" title="Discount MBT Shoes Clearance">Discount MBT Shoes Clearance</a>
+<a href="http://www.mbtusoutlet.com/" title="MBT Shoes US Clearance">MBT Shoes US Clearance</a>
+<a href="http://www.mbtukoutlet.com/" title="mbt shoes outlet">mbt shoes outlet</a>
+<a href="http://www.mbtdiscountlife.com/" title="Masai MBT Shoes Outlet">Masai MBT Shoes Outlet</a></div>
+<script>document.write ('<' + '/d' + 'i' + 'v>');</script>

@@ -1,0 +1,165 @@
+img {
+border:0;
+}
+.zhengwen {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 22px; FONT-STYLE: normal; FONT-FAMILY: "??"
+}
+body {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #333333; LINE-HEIGHT: 20px; FONT-FAMILY: "ËÎÌו"; TEXT-DECORATION: none
+}
+.hui {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #999999; LINE-HEIGHT: 20px; FONT-FAMILY: "ËÎÌו"; TEXT-DECORATION: none
+}
+.zhengwen02 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #326ed2; LINE-HEIGHT: 22px; FONT-STYLE: normal; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+.box {
+	MARGIN-LEFT: 15px; MARGIN-RIGHT: 20px
+}
+A.al:link {
+	FONT-SIZE: 12px; COLOR: #35558a; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+A.al:visited {
+	FONT-SIZE: 12px; COLOR: #35558a; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+A.al:hover {
+	FONT-SIZE: 12px; COLOR: #35558a; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+A.al:active {
+	FONT-SIZE: 12px; COLOR: #35558a; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+A {
+	FONT-SIZE: 12px; COLOR: black; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: red; TEXT-DECORATION: none
+}
+A.a2:link {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+A.a2:unknown {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+A.a2:hover {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+A.a2:active {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+.border {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.title-E {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A.E {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.title-zhen {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #6fd1ff; FONT-FAMILY: "??"
+}
+.title-engl {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.title01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+.title_biaoti {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #326ed2; FONT-FAMILY: "??"
+}
+.xiao {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #326ed2; FONT-FAMILY: "??"
+}
+.title03 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #333333; FONT-FAMILY: "??"
+}
+.title02 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; FONT-FAMILY: "??"
+}
+.e-bottom {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 15px; FONT-FAMILY: "??"
+}
+.t-01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.t-02 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 20px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.t-03 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #3399ff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+INPUT.buttonface {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 11px; BACKGROUND: #cbe6a8; PADDING-BOTTOM: 1px; BORDER-LEFT: #000000 1px solid; CURSOR: hand; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "Song", "Tahoma", "MS Shell Dlg"; HEIGHT: 18px; onMouseOut: "this.style.backgroundColor#f3f3f3 onMouseOverthis.style.backgroundColor#000000"
+}
+.editbox1 {
+	BORDER-RIGHT: #7d85a2 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #7d85a2 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; BORDER-LEFT: #7d85a2 1px solid; CURSOR: text; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "Song","Tahoma","MS Shell Dlg"; HEIGHT: 16px; BACKGROUND-COLOR: #cbe6a8
+}
+.editbox2 {
+	BACKGROUND-COLOR: #cccccc
+}
+INPUT.smallInput {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; BORDER-LEFT: #000000 1px solid; CURSOR: text; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "Song","Tahoma","MS Shell Dlg"; HEIGHT: 18px; BACKGROUND-COLOR: #cbe6a8
+}
+SELECT.smallsel {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT: 9pt "Arial", "Tahoma", "sans-serif"; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 18px
+}
+.TextBorder {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; BORDER-LEFT: #000000 1px solid; CURSOR: text; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "Song","Tahoma","MS Shell Dlg"
+}
+#nowtime {
+	FILTER: DropShadow(Color=gray, OffX=1, OffY=1, Positive=1); COLOR: #fff; LETTER-SPACING: 0px
+}
+.rtlb-blun1 {
+	BORDER-RIGHT: #3399cc 1px dotted; BORDER-TOP: #3399cc 1px dotted; BORDER-LEFT: #3399cc 1px dotted; BORDER-BOTTOM: #3399cc 1px dotted
+}
+.rl-orange {
+	BORDER-RIGHT: #9B9968 1px solid; BORDER-LEFT: #9B9968 1px solid
+}
+.rl-green {
+	BORDER-RIGHT: #61B464 1px solid; BORDER-LEFT: #61B464 1px solid
+}
+.rlb-gray {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.rtlb-green {
+	BORDER-RIGHT: #9DCDA5 1px solid; BORDER-LEFT: #9DCDA5 1px solid; BORDER-BOTTOM: #9DCDA5 1px solid; BORDER-top: #9DCDA5 1px solid
+}
+.r-green {
+  BORDER-RIGHT: #65C26A 1px solid
+}
+.b-gray {
+  BORDER-BOTTOM: #AAAFB2 1px dotted
+}
+.title04 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #093F9F; FONT-FAMILY: "??"; TEXT-DECORATION: none
+}
+.b-1-gray {
+  BORDER-BOTTOM: #ECECEC 1px solid
+}
+.green {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #004101; LINE-HEIGHT: 22px; FONT-STYLE: normal; FONT-FAMILY: "??"
+}
+TD {
+	FONT-SIZE: 8pt; LINE-HEIGHT: 150%; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+P {
+	LINE-HEIGHT: 20px
+}
+.big {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: "ËÎÌו"
+}
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #999999
+}
+SELECT {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "Verdana"
+}
+INPUT {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "verdana"
+}
+TEXTAREA {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #cccccc 1px solid; LINE-HEIGHT: 16px; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "Verdana"
+}

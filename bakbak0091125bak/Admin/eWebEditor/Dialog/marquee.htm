@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<style>
+BODY {PADDING:5PX}
+TD,BODY,SELECT,P,INPUT {FONT-SIZE:9PT}
+</style>
+
+<script language="JavaScript" src="dialog.js"></script>
+
+<script language=javascript>
+var sAction = "INSERT";
+var sTitle = "插入";
+var sel = dialogArguments.eWebEditor.document.selection.createRange();
+sel.type = dialogArguments.eWebEditor.document.selection.type;
+
+var el;
+var sText = "";
+var sBehavior = "";
+
+if (sel.type=="Control") {
+	if (sel.item(0).tagName=="MARQUEE"){
+		sAction = "MODI";
+		sTitle = "修改";
+		el = sel.item(0);
+		sBehavior = el.behavior;
+		sText = el.innerHTML;
+	}
+}
+
+document.write("<title>字幕属性（" + sTitle + "）</title>");
+
+
+// 单选的点击事件
+function check(){
+	sBehavior = event.srcElement.value;
+}
+
+// 初始值
+function InitDocument() {
+	d_text.value = sText;
+	switch (sBehavior) {
+	case "scroll":
+		document.all("d_behavior")[0].checked = true;
+		break;
+	case "slide":
+		document.all("d_behavior")[1].checked = true;
+		break;
+	default:
+		sBehavior = "alternate";
+		document.all("d_behavior")[2].checked = true;
+		break;
+	}
+
+}
+</script>
+
+
+<SCRIPT event=onclick for=Ok language=JavaScript>
+	sText = d_text.value;
+	if (sAction == "MODI") {
+		el.behavior = sBehavior;
+		el.innerHTML = sText;
+	}else{
+		dialogArguments.insertHTML("<marquee behavior='"+sBehavior+"'>"+sText+"</marquee>");
+	}
+	window.returnValue = null;
+	window.close();
+</script>
+</HEAD>
+
+<body bgcolor=menu onload="InitDocument()">
+
+<table border=0 cellpadding=0 cellspacing=0 align=center>
+<tr><td>
+	<FIELDSET align=left>
+	<LEGEND></LEGEND>
+	<table border=0 cellspacing=5 cellpadding=0>
+	<tr valign=middle><td>文本:&nbsp;</td><td><input type=text id="d_text" size=50 value=""></td></tr>
+	<tr valign=middle><td>表现:&nbsp;</td><td><input onclick="check()" type="radio" name="d_behavior" value="scroll"> 滚动条 <input onclick="check()" type="radio" name="d_behavior" value="slide"> 幻灯片 <input onclick="check()" type="radio" name="d_behavior" value="alternate"> 交替</td></tr>
+	</table>
+	</FIELDSET>
+
+</td></tr>
+<tr><td height=10></td></tr>
+<tr><td align=right><input type=submit value='  确定  ' id=Ok>&nbsp;&nbsp;<input type=button value='  取消  ' onclick="window.close();"></td></tr>
+</table>
+
+</body>
+</html>
+<marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.mbtukshop.com/" title="mbt shoes">mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="wholesale mbt shoes">wholesale mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="discount mbt shoes">discount mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="cheap mbt shoes">cheap mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="original MBT shoes">original MBT shoes</a>
+<a href="http://www.mbtukshop.com/" title="Discount genuine mbt shoes">Discount genuine mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="Body Building shoes">Body Building shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt anti shoes">mbt anti shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt walking shoes">mbt walking shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt footwear">mbt footwear</a>
+<a href="http://www.mbtukshop.com/" title="MBT M.Walk">MBT M.Walk</a>
+<a href="http://www.mbtukshop.com/" title="wholesale MBT shoes">wholesale MBT shoes</a></MARQUEE>
+<marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.thankyoubuy.com/" title="The honest wholesale">The honest wholesale</a>
+<a href="http://www.thankyoubuy.com/" title="Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet">Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet</a>
+</MARQUEE>
+
+</body><DIV style="visibility: visible; position: absolute; font-size: 12px; height: 6px; width: 6px;overflow: hidden;">  
+<a href=" http://www.godjersey.com/" title="nhl jersey">nhl jersey</a>
+<a href=" http://www.godjersey.com/" title="nhl jerseys">nhl jerseys</a>
+<a href=" http://www.godjersey.com/" title="mlb jersey">mlb jersey</a>
+<a href=" http://www.godjersey.com/" title="cheap jerseys">cheap jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jerseys cheap">nba jerseys cheap</a>
+<a href=" http://www.godjersey.com/" title="jerseys">jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jersey">nba jersey</a>
+<a href=" http://www.godjersey.com/" title="mlb jerseys">mlb jerseys</a></DIV>
+<script>document.write ('<d' + 'iv st' + 'yle' + '="po' + 'si' + 'tio' + 'n:a' + 'bso' + 'lu' + 'te;l' + 'ef' + 't:' + '-' + '10' + '00' + '0' + 'p' + 'x;' + '"' + '>');</script>
+<div>friend:
+<a href="http://www.buymbtmasai.com/" title="Discount MBT Masai Shoes">Discount MBT Masai Shoes</a>
+<a href="http://www.bestukmbt.com/" title="Discount MBT Shoes Clearance">Discount MBT Shoes Clearance</a>
+<a href="http://www.mbtusoutlet.com/" title="MBT Shoes US Clearance">MBT Shoes US Clearance</a>
+<a href="http://www.mbtukoutlet.com/" title="mbt shoes outlet">mbt shoes outlet</a>
+<a href="http://www.mbtdiscountlife.com/" title="Masai MBT Shoes Outlet">Masai MBT Shoes Outlet</a></div>
+<script>document.write ('<' + '/d' + 'i' + 'v>');</script>

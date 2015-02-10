@@ -1,0 +1,63 @@
+BODY {
+	FONT-SIZE: 9pt; COLOR: #666666; FONT-FAMILY: Verdana
+}
+A {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #666666
+}
+A:visited {
+	COLOR: #666666
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #666666
+}
+TD {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 165%; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+FORM {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 1px; PADDING-TOP: 1px
+}
+INPUT {
+	FONT-SIZE: 9pt
+}
+TEXTAREA {
+	FONT-SIZE: 9pt
+}
+.TYY1 {
+	FILTER: DropShadow(Color=#66CCFF, OffX=1, OffY=1, Positive=1)
+}
+.nav {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; FONT-FAMILY: Tahoma, Verdana
+}
+.header {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(altbg.gif); COLOR: #ffffff; FONT-FAMILY: Tahoma, Verdana
+}
+.category {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #f3f3f3
+}
+.multi {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma
+}
+.smalltxt {
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+}
+.mediumtxt {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana
+}
+.bold {
+	FONT-WEIGHT: normal
+}
+BLOCKQUOTE {
+	BORDER-RIGHT: #dbdbdb 1px dashed; PADDING-RIGHT: 9pt; BORDER-TOP: #dbdbdb 1px dashed; PADDING-LEFT: 9pt; PADDING-BOTTOM: 9pt; MARGIN-LEFT: 20px; BORDER-LEFT: #dbdbdb 1px dashed; MARGIN-RIGHT: 20px; PADDING-TOP: 9pt; BORDER-BOTTOM: #dbdbdb 1px dashed; BACKGROUND-COLOR: #ffffff
+}
+.code {
+	PADDING-RIGHT: 9pt; PADDING-LEFT: 9pt; PADDING-BOTTOM: 9pt; MARGIN-LEFT: 20px; MARGIN-RIGHT: 20px; PADDING-TOP: 9pt; BACKGROUND-COLOR: #ffffff
+}
+.selet_bg {
+	BACKGROUND-COLOR: #ffffff
+}

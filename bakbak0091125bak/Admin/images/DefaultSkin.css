@@ -1,0 +1,45 @@
+.wei {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+.kuang {
+	BORDER-RIGHT: #ffffff thin groove; BORDER-TOP: #ffffff thin groove; FONT-SIZE: 9pt; BORDER-LEFT: #ffffff thin groove; BORDER-BOTTOM: #ffffff thin groove; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"; HEIGHT: 18px; BACKGROUND-COLOR: #daeffc
+}
+.wei1 {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+A.mylink:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.mylink:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.mylink:hover {
+	COLOR: #ff6600
+}
+A:link {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 9pt; COLOR: #ff6600
+}
+.j {
+	FONT-SIZE: 12px; LINE-HEIGHT: 16px; FONT-FAMILY: "宋体"
+}
+.d {
+	FONT-SIZE: 12px; LINE-HEIGHT: 23px; FONT-FAMILY: "宋体"
+}
+.e {
+	FONT-SIZE: 12px; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+.kuang1 {
+	BORDER-RIGHT: #ffffff thin groove; BORDER-TOP: #ffffff thin groove; FONT-SIZE: 9pt; BORDER-LEFT: #ffffff thin groove; BORDER-BOTTOM: #ffffff thin groove; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"; HEIGHT: 18px; BACKGROUND-COLOR: #fdf9e8
+}
+.kuang2 {
+	BORDER-RIGHT: #ffffff thin groove; BORDER-TOP: #ffffff thin groove; FONT-SIZE: 9pt; BORDER-LEFT: #ffffff thin groove; BORDER-BOTTOM: #ffffff thin groove; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"; HEIGHT: 18px; BACKGROUND-COLOR: #f4f3e6
+}
+.kuang3 {
+	BORDER-RIGHT: #ffffff thin groove; BORDER-TOP: #ffffff thin groove; FONT-SIZE: 9pt; BORDER-LEFT: #ffffff thin groove; BORDER-BOTTOM: #ffffff thin groove; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"; HEIGHT: 18px; BACKGROUND-COLOR: #fffbfe
+}

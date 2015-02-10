@@ -1,0 +1,183 @@
+BODY {
+	MARGIN-TOP: 1px; FONT-SIZE: 9pt; MARGIN-LEFT: 0px; COLOR: #000000; LINE-HEIGHT: 150%; MARGIN-RIGHT: 0px; FONT-FAMILY: "宋体"; BACKGROUND-COLOR: #ffffff
+}
+BODY.tvadmin {
+	MARGIN-TOP: 0px; FONT-SIZE: 9pt; MARGIN-LEFT: 0px; COLOR: #ffffff; LINE-HEIGHT: 150%; MARGIN-RIGHT: 0px; FONT-FAMILY: "宋体"; BACKGROUND-COLOR: #f1f8ff
+}
+BODY.nomargin {
+	MARGIN-TOP: 0px; FONT-SIZE: 9pt; MARGIN-LEFT: 0px; COLOR: #000000; LINE-HEIGHT: 150%; MARGIN-RIGHT: 0px; FONT-FAMILY: "宋体"
+}
+DIV {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+HR {
+	COLOR: #7fb3cc
+}
+HR.row {
+	BORDER-TOP: 1px; COLOR: #eeeeee
+}
+PRE {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+TH {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+TABLE {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%
+}
+TABLE.dataclass {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%
+}
+TD.title {
+	BORDER-TOP: white 1px solid; FONT-SIZE: 9pt; BACKGROUND: #d6e7ef; COLOR: #228b22; LINE-HEIGHT: 150%; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: 宋体
+}
+TR.row {
+	FONT-SIZE: 9pt; BACKGROUND: #eeeeee; LINE-HEIGHT: 150%; BORDER-BOTTOM: #708090 1cm solid; FONT-FAMILY: 宋体
+}
+TD.row {
+	FONT-SIZE: 9pt; BACKGROUND: #eff7ff; LINE-HEIGHT: 150%; BORDER-BOTTOM: #708090 1px groove; FONT-FAMILY: 宋体
+}
+TD.row1 {
+	FONT-SIZE: 9pt; BACKGROUND: #eeeeee; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+TD.left {
+	FONT-SIZE: 9pt; BACKGROUND: #e7f3f7; LINE-HEIGHT: 150%; BORDER-BOTTOM: #708090 1px groove; FONT-FAMILY: 宋体
+}
+TD.leftbak {
+	FONT-SIZE: 9pt; BACKGROUND: #00b8d8; LINE-HEIGHT: 150%; BORDER-BOTTOM: #708090 1px groove; FONT-FAMILY: 宋体
+}
+TD.right {
+	FONT-SIZE: 9pt; BACKGROUND: #caf5fb; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+TD.bottom {
+	FONT-SIZE: 9pt; BACKGROUND: #d6e7ef; LINE-HEIGHT: 150%; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: 宋体; TEXT-ALIGN: right
+}
+P.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: 宋体
+}
+P {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+LI {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+CAPTION {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+INPUT {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+SELECT {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+TEXTAREA {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+OPTION {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+FORM {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+UL {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: 宋体
+}
+A:link {
+	COLOR: #21309c; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #21309c; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+LI {
+	LIST-STYLE-TYPE: disc
+}
+.boxborder {
+	BORDER-RIGHT: #9999ff 0px solid; BORDER-TOP: #00cc00 0px solid; BORDER-LEFT: #9999ff 0px solid; COLOR: #ff6600; BORDER-BOTTOM: #9999ff 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.titlebar {
+	PADDING-LEFT: 10px; MARGIN-BOTTOM: 5px; FONT: bold 14px/20px "Arial"; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 2px; BACKGROUND-COLOR: #9ca663
+}
+.tabletitletext {
+	FONT-WEIGHT: bold; FONT-FAMILY: "Arial"
+}
+TABLE.tabletoolbar {
+	BORDER-RIGHT: #253e82 0px double; BORDER-TOP: #253e82 0px double; MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 3px; BORDER-LEFT: #253e82 0px double; BORDER-BOTTOM: #253e82 1px double; BORDER-COLLAPSE: collapse
+}
+TABLE.tableframe {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; MARGIN-TOP: 5px; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #fbf5f0
+}
+TR.Listtitle {
+	BORDER-TOP: #decbad 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 9pt; BACKGROUND: #decbad; COLOR: #333333; BORDER-BOTTOM: #decbad 1px solid; FONT-FAMILY: 宋体; HEIGHT: 18px; TEXT-ALIGN: center
+}
+TR.ListtitleBorder {
+	BORDER-RIGHT: #7c9ccf 1px solid; BORDER-TOP: #7c9ccf 1px solid; FONT-SIZE: 9pt; BACKGROUND: #8caae7; BORDER-LEFT: #7c9ccf 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #7c9ccf 1px solid; FONT-FAMILY: 宋体; HEIGHT: 18px; TEXT-ALIGN: center
+}
+TR.Listrow2 {
+	FONT-SIZE: 9pt; BACKGROUND: #fff7f7; FONT-FAMILY: Arial
+}
+TR.Listrow1 {
+	FONT-SIZE: 9pt; BACKGROUND: #fff7e7; FONT-FAMILY: Arial
+}
+TR.Listrow1_1 {
+	FONT-SIZE: 9pt; BACKGROUND: #dfdfdf; FONT-FAMILY: Arial
+}
+TR.Listrow3 {
+	FONT-SIZE: 9pt; BACKGROUND: #ffffff; FONT-FAMILY: Arial
+}
+TD.ListCellTitle {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #999999 0px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #999999 1px solid
+}
+TD.ListCellRow {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; BORDER-LEFT: #999999 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #999999 1px solid
+}
+TD.listtail {
+	FONT-SIZE: 9pt; BACKGROUND: #ebe0cf; BORDER-BOTTOM: #999999 1px solid
+}
+TABLE.InputFrameMain {
+	BORDER-RIGHT: #9c9c9c 1px solid; BORDER-TOP: #9c9c9c 1px solid; MARGIN-TOP: 15px; MARGIN-BOTTOM: 5px; BORDER-LEFT: #9c9c9c 1px solid; BORDER-BOTTOM: #9c9c9c 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f7ebde
+}
+TR.InputFrameLine {
+	FONT-SIZE: 9pt; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; FONT-FAMILY: 'Arial'
+}
+TR.InputFrameButtonLine {
+	FONT-SIZE: 9pt; PADDING-BOTTOM: 1px; PADDING-TOP: 5px; FONT-FAMILY: 'Arial'
+}
+TD.InputLabelCell {
+	BORDER-RIGHT: #9c9c9c 0px solid; PADDING-RIGHT: 10px; BORDER-TOP: #9c9c9c 0px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 9pt; VERTICAL-ALIGN: top; BORDER-LEFT: #9c9c9c 0px solid; COLOR: black; PADDING-TOP: 5px; BORDER-BOTTOM: #9c9c9c 0px solid; FONT-FAMILY: '宋体'; TEXT-ALIGN: right
+}
+TD.InputAreaCell {
+	BORDER-RIGHT: #9c9c9c 0px solid; BORDER-TOP: #9c9c9c 0px solid; BORDER-LEFT: #9c9c9c 0px solid; BORDER-BOTTOM: #9c9c9c 1px solid
+}
+TEXTAREA.InputArea {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; BORDER-LEFT: #888888 1px solid; BORDER-BOTTOM: #888888 1px solid; BACKGROUND-COLOR: #ffffff
+}
+SELECT.Inputselect {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; BORDER-LEFT: #888888 1px solid; BORDER-BOTTOM: #888888 1px solid; BACKGROUND-COLOR: #ffffff
+}
+INPUT.button {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 9pt; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px solid; CURSOR: hand; COLOR: #000000; LINE-HEIGHT: 9pt; PADDING-TOP: 2px; BORDER-BOTTOM: 1px solid; FONT-FAMILY: 宋体; HEIGHT: 20px; BACKGROUND-COLOR: #b4bb88
+}
+INPUT.input {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; LEFT: 0px; BORDER-LEFT: #888888 1px solid; BORDER-BOTTOM: #888888 1px solid; TOP: 0px; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+INPUT.inputreadonly {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; COLOR: #000000; BORDER-BOTTOM: #888888 0px solid; TOP: 0px; BACKGROUND-COLOR: transparent
+}
+.LinkText {
+	CURSOR: hand; COLOR: #0065ce
+}
+.getdate {
+	BEHAVIOR: url(css/getdate_vbs.htc); CURSOR: hand
+}
+.editbox1 {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; BORDER-LEFT: #000000 1px solid; CURSOR: text; COLOR: #333333; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; HEIGHT: 20px
+}
+.button1 {
+	BORDER-RIGHT: #665b8e 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; BACKGROUND: #cccccc; PADDING-BOTTOM: 1px; BORDER-LEFT: #ffffff 1px solid; CURSOR: hand; COLOR: #333333; PADDING-TOP: 1px; BORDER-BOTTOM: #665b8e 1px solid; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; HEIGHT: 20px
+}

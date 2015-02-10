@@ -1,0 +1,28 @@
+img {
+border:0;
+}
+TD {
+	FONT-SIZE: 8pt; LINE-HEIGHT: 150%; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+P {
+	LINE-HEIGHT: 20px
+}
+.big {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; FONT-FAMILY: "ËÎÌו"
+}
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #999999
+}
+SELECT {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "Verdana"
+}
+INPUT {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "verdana"
+}
+TEXTAREA {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #cccccc 1px solid; LINE-HEIGHT: 16px; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "Verdana"
+}
+
