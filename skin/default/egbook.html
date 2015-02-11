@@ -1,0 +1,86 @@
+﻿$head$
+
+<div id="content">
+<!--left-->
+$left$
+
+<script language="javascript" src="/js/validator.js"></script>
+<script>
+
+/*显示认证码 o start1*/
+function get_Code() {
+	var Dv_CodeFile = "/dvbbscode/Dv_GetCode.asp";
+	if(document.getElementById("imgid"))
+		document.getElementById("imgid").innerHTML = '<img src="'+Dv_CodeFile+'?t='+Math.random()+'" alt="点击刷新验证码" style="cursor:pointer;border:0;vertical-align:middle;" onclick="this.src=\''+Dv_CodeFile+'?t=\'+Math.random()" />'
+}
+/*o end*/
+</script>
+<!--right-->
+<div id="right">
+	<div class="daohang">Your current location:<a href="/default.$weburlext$">Home Page</a> > Message</div>
+	<div class="classTitle">
+    	<div class="classTitlelogo"></div>
+        <div class="classTitleWord"><a href="/gbook.$weburlext$">Message</a>&nbsp;&nbsp;<span>在线留言</span></div>
+    </div>
+    <div class="intro">
+        <table width="98%"  border="0" cellpadding="3" cellspacing="0" align="center">
+<form action="Demo_GuestPost.asp" method="post" name="form0"  onSubmit="return Validator.Validate(this,2);">
+              <input name="bookpost" type="hidden" value="bookpost">
+              <tr>
+                <td width="183" height="25" align="right">&nbsp;&nbsp;Title:</td>
+                <td width="531" height="25" align="left"><input name="m_title" type="text" id="m_title3" size="50" maxlength="50" dataType="LimitB" min="2" max="20" msg="Name must be filled (2-20 characters)">
+                <span class="red">*</span></td>
+  </tr>
+              <tr>
+                <td height="25" align="right" valign="top" width="183">&nbsp;&nbsp;Comments / Suggestions:</td>
+                <td width="531" height="25" align="left"><textarea name="m_text" cols="55" rows="8" id="textarea2" dataType="LimitB" min="5" max="300" msg="Comments / recommendations must be completed (5-300 characters)"></textarea>
+                <span class="red">*</span></td>
+</tr>
+              <tr>
+                <td height="25" align="right" width="183">&nbsp;&nbsp;Your name:</td>
+                <td width="531" height="25" align="left"><input name="m_name" type="text" id="m_name3" value="Visitors" size="50" maxlength="50">
+                </td>
+</tr>
+              <tr>
+                <td height="25" align="right" width="183">&nbsp;&nbsp;E-Mail:</td>
+                <td width="531" height="25" align="left"><input name="m_email" type="text" id="m_email3" size="50" maxlength="50" dataType="Email" msg="Please fill a valid e-mail address!">
+                <span class="red">*</span></td>
+</tr>
+              <tr>
+                <td height="25" align="right" width="183">&nbsp;&nbsp;Address:</td>
+                <td width="531" height="25" align="left"><input name="m_addr" type="text" id="m_addr3" size="50" maxlength="50"></td>
+</tr>
+              <tr>
+                <td height="25" align="right" width="183">&nbsp;&nbsp;Tel:</td>
+                <td width="531" height="25" align="left"><input name="m_tel" type="text" id="m_tel3" size="50" maxlength="50"></td>
+</tr>
+              <tr>
+                <td height="25" align="right" width="183">&nbsp;&nbsp;Fax:</td>
+                <td width="531" height="25" align="left"><input name="m_fax" type="text" id="m_fax3" size="50" maxlength="50"></td>
+</tr>
+ <tr> 
+              <td height="12" align="right" valign="top">&nbsp;验 证 码:</td>      
+              <td height="0" align="left"><input type="text" name="codestr"  onfocus="get_Code();return true;" />&nbsp;
+<div id="imgid" style="float:left"></div></td>
+            </tr>
+              <tr align="center" valign="middle">
+                <td height="8" colspan="2"></td>
+              </tr>
+              <tr align="center" valign="middle">
+                <td height="30" colspan="2"><input type="submit" name="Submit2" value="Send" class="button">
+&nbsp;&nbsp;         
+        <input type="reset" name="Submit2" value="Reset" class="button"></td>
+              </tr>
+          </form>
+              <tr align="center" valign="middle">
+                <td height="30" colspan="2"></td>
+              </tr>
+          </table>
+    </div> 	
+    
+</div>
+</div>
+$foot$
+
+</body>
+</html>

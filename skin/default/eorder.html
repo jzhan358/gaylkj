@@ -1,0 +1,88 @@
+﻿$head$
+
+<div id="content">
+<!--left-->
+$left$
+<script language="javascript" src="/js/validator.js"></script>
+<script>
+
+/*显示认证码 o start1*/
+function get_Code() {
+	var Dv_CodeFile = "/dvbbscode/Dv_GetCode.asp";
+	if(document.getElementById("imgid"))
+		document.getElementById("imgid").innerHTML = '<img src="'+Dv_CodeFile+'?t='+Math.random()+'" alt="点击刷新验证码" style="cursor:pointer;border:0;vertical-align:middle;" onclick="this.src=\''+Dv_CodeFile+'?t=\'+Math.random()" />'
+}
+/*o end*/
+</script>
+<!--right-->
+<div id="right">
+	<div class="daohang">Your current location:<a href="/default.$weburlext$">Home Page</a> > Order</div>
+	<div class="classTitle">
+    	<div class="classTitlelogo"></div>
+        <div class="classTitleWord"><a href="/eorder.$weburlext$">Order</a>&nbsp;&nbsp;<span>在线订购</span></div>
+    </div>
+    <div class="intro">
+        <table width="98%" border="0"  cellpadding="2" cellspacing="0" align="center">
+         <form action="Demo_OrderPost.asp" method="post" name="form0" onSubmit="return Validator.Validate(this,2);">   
+          <tr> 
+              <td height="25" align="right" valign="top">&nbsp;&nbsp;Customer Name:</td>
+              <td height="20" align="left"><input name="company" type="text" id="company2" size="40" maxlength="50" dataType="LimitB" min="2" max="20" msg="Customer Name must be filled (2-20 characters)">
+              <span class="red">*</span></td>
+            </tr>      
+          
+            <tr> 
+              <td height="25" align="right" valign="top">&nbsp;&nbsp;Address:</td>
+              <td height="20" align="left"><input name="addr" type="text" id="addr2" size="40" maxlength="50" dataType="LimitB" min="4" max="50" msg="Address must be filled (4-50 characters)">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;&nbsp;Tel:</td>
+              <td height="25" align="left"><input name="tel" type="text" id="tel2" size="40" maxlength="50" dataType="LimitB" min="4" max="50" msg="Phone must be filled (4-50 characters)">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;Fax:</td>
+              <td height="25" align="left"><input name="fax" type="text" id="fax2" size="40" maxlength="50"></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;you name:</td>       
+              <td height="25" align="left"><input name="linkman" type="text" id="linkman2" size="40" maxlength="50"></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;&nbsp;Product name:</td>
+              <td height="25" align="left"><input name="proname" type="text" id="proname2" size="40" maxlength="50" value="$title$" dataType="LimitB" min="2" max="50" msg="Product namemust be filled（2-50characters）">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;&nbsp;Product NO.:</td>
+              <td height="25" align="left"><input name="proxh" type="text" id="proxh2"  dataType="LimitB" min="2" max="50" msg="Product NO. be filled（2-50characters）" size="40" maxlength="50" value="$hh$">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="12" align="right">&nbsp;&nbsp;Num:</td>
+              <td height="-2" align="left"><input name="num" type="text" id="num2" dataType="Integer"  msg="Order quantity must be a number of！" size="40" maxlength="50">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="12" align="right" valign="top">&nbsp;Memo:</td>      
+              <td height="0" align="left"><textarea name="bz" cols="45" rows="7" id="textarea2" style="font-size:12px"></textarea></td>
+            </tr>
+             <tr> 
+              <td height="12" align="right" valign="top">&nbsp;验 证 码:</td>      
+              <td height="0" align="left"><input type="text" name="codestr"  onfocus="get_Code();return true;" />&nbsp;
+<div id="imgid" style="float:left"></div></td>
+            </tr>
+            <tr align="center" valign="middle"> 
+              <td height="30" colspan="2" align="center"><input type="submit" name="Submit2" value="Send" class="button"> 
+                &nbsp;&nbsp; <input type="reset" name="Submit2" value="Reset" class="button"></td>      
+            </tr>            
+			</form>        
+        </table>
+    </div> 	
+    
+</div>
+</div>
+$foot$
+
+</body>
+</html>

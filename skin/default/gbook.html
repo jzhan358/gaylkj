@@ -1,0 +1,86 @@
+﻿$head$
+
+<div id="content">
+<!--left-->
+$left$
+
+<script language="javascript" src="/js/validator.js"></script>
+<script>
+
+/*显示认证码 o start1*/
+function get_Code() {
+	var Dv_CodeFile = "/dvbbscode/Dv_GetCode.asp";
+	if(document.getElementById("imgid"))
+		document.getElementById("imgid").innerHTML = '<img src="'+Dv_CodeFile+'?t='+Math.random()+'" alt="点击刷新验证码" style="cursor:pointer;border:0;vertical-align:middle;" onclick="this.src=\''+Dv_CodeFile+'?t=\'+Math.random()" />'
+}
+/*o end*/
+</script>
+<!--right-->
+<div id="right">
+	<div class="daohang">当前您的位置：<a href="/" title="返回广州777机供应,广州37机游戏机公司">首页</a> > 在线留言</div>
+	<div class="classTitle">
+    	<div class="classTitlelogo"></div>
+        <div class="classTitleWord"><a href="/gbook.$weburlext$" title="在线给广州777机供应,广州37机游戏机公司留言">在线留言</a>&nbsp;&nbsp;<span>Message</span></div>
+    </div>
+    <div class="intro">
+        <table width="98%"  border="0" cellpadding="3" cellspacing="0" align="center">
+  <form action="Demo_GuestPost.asp" method="post" name="form0"  onSubmit="return Validator.Validate(this,2);">
+              <input name="bookpost" type="hidden" value="bookpost">
+              <tr>
+                <td width="120" height="25" align="right">&nbsp;留言标题：</td>
+                <td width="554" height="25"><input name="m_title" type="text" id="m_title3" size="50" maxlength="50" dataType="LimitB" min="2" max="20" msg="名称必须填写（2-20字符）">
+                <span class="red">*</span></td>
+        </tr>
+              <tr>
+                <td height="25" align="right" valign="top" width="120">&nbsp;&nbsp;意见/建议：</td>
+                <td height="25" width="554"><textarea name="m_text" cols="41" rows="8" id="textarea2" dataType="LimitB" min="5" max="300" msg="意见/建议必须填写（5-300字符）"></textarea>
+                <span class="red">*</span></td>
+        </tr>
+              <tr>
+                <td height="25" align="right" width="120">&nbsp;&nbsp;您的称呼：</td>
+                <td height="25" width="554"><input name="m_name" type="text" id="m_name3" value="游客" size="50" maxlength="50">
+                </td>
+        </tr>
+              <tr>
+                <td height="25" align="right" width="120">&nbsp;&nbsp;邮件地址：</td>
+                <td height="25" width="554"><input name="m_email" type="text" id="m_email3" size="50" maxlength="50" dataType="Email" msg="请填写一个有效的邮箱地址">
+                <span class="red">*</span></td>
+        </tr>
+              <tr>
+                <td height="25" align="right" width="120">&nbsp;&nbsp;详细地址：</td>
+                <td height="25" width="554"><input name="m_addr" type="text" id="m_addr3" size="50" maxlength="50"></td>
+        </tr>
+              <tr>
+                <td height="25" align="right" width="120">&nbsp;&nbsp;联系电话：</td>
+                <td height="25" width="554"><input name="m_tel" type="text" id="m_tel3" size="50" maxlength="50"></td>
+        </tr>
+              <tr>
+                <td height="25" align="right" width="120">&nbsp;&nbsp;传真号码：</td>
+                <td height="25" width="554"><input name="m_fax" type="text" id="m_fax3" size="50" maxlength="50"></td>
+        </tr>
+         <tr> 
+              <td height="12" align="right" valign="top">&nbsp;验 证 码:</td>      
+              <td height="0" align="left"><input type="text" name="codestr"  onfocus="get_Code();return true;" />&nbsp;
+<div id="imgid" style="float:left"></div></td>
+            </tr>
+              <tr align="center" valign="middle">
+                <td height="8" colspan="2"></td>
+              </tr>
+              <tr align="center" valign="middle">
+                <td height="30" colspan="2"><input type="submit" name="Submit2" value="发出留言" class="button">
+&nbsp;&nbsp;         
+        <input type="reset" name="Submit2" value="取消清空" class="button"></td>
+              </tr>
+          </form>
+              <tr align="center" valign="middle">
+                <td height="30" colspan="2"></td>
+              </tr>
+          </table>
+    </div> 	
+    
+</div>
+</div>
+$foot$
+
+</body>
+</html>

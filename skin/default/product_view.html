@@ -1,0 +1,46 @@
+﻿$head$
+
+<div id="content">
+<!--left-->
+$left$
+
+<!--right-->
+<div id="right">
+	<div class="daohang">当前您的位置:<a href="/">首页</a> > <a href="products.asp">产品展示</a> > 产品详细页</div>
+	<div class="classTitle">
+    	<div class="classTitlelogo"></div>
+        <div class="classTitleWord">产品详细&nbsp;&nbsp;<span>Products details</span></div>
+    </div>
+    <div class="intro_auto">
+       <div class="infotitle">$p_name$</div>
+       <hr />      
+       <div class="infoContent">
+       	 <p align="center"><a href="$pic$" target="_blank" title="$p_name$"><img src="$pic$" border="0" title="产品名称：$p_name$ 产品编号：$p_spec$" alt="产品名称：$p_name$ 产品编号：$p_spec$"></a></p>
+         <br />
+         <table width="98%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
+          <tr>
+            <td width="18%" align="right" height="23"><strong>产品名称:</strong>&nbsp;</td>
+            <td width="82%" >&nbsp;$p_name$</td>          
+          </tr>
+          <tr>
+            <td align="right" height="23"><strong>产品编号:</strong>&nbsp;</td>
+            <td>&nbsp;$p_spec$</td>
+          </tr>
+          <tr>
+            <td align="right" height="23"><strong>详细介绍：</strong>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+           <tr>
+            <td align="left" height="23" colspan="2" style="padding:5px">$p_jianjie$</td>           
+          </tr>
+        </table>
+       </div>
+       <div class="infofoot"><a href="/order.asp?id=$id$"><img src="$skinpath$/images/dg.gif" title="online buy $p_name_e$"/></a>&nbsp;$pre$&nbsp;$next$</div>
+    </div> 	
+    
+</div>
+</div>
+$foot$
+
+</body>
+</html>

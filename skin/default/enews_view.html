@@ -1,0 +1,32 @@
+﻿$head$
+
+<div id="content">
+<!--left-->
+$left$
+
+<!--right-->
+<div id="right">
+	<div class="daohang">Your current location:<a href="/default.$weburlext$">Home Page</a> > <a href="/enews.asp">News</a> > News details</div>
+	<div class="classTitle">
+    	<div class="classTitlelogo"></div>
+        <div class="classTitleWord">News details&nbsp;&nbsp;<span>News</span></div>
+    </div>
+    <div class="intro_auto">
+       <div class="infotitle">$news_title$</div>
+       <hr />
+       <div class="infomenu">From：$news_ahome$&nbsp;View：<span class="red" id="viewnum"></span> &nbsp;author：$news_author$ Add Date：$news_date$</div>
+       <div class="infoContent">
+       	$news_content$
+       </div>
+       <div class="infofoot">[ <a href="javascript:window.close();">Close</a> ]&nbsp;[ <a href="javascript:history.back();">Back</a>]</div>
+    </div> 	
+    
+</div>
+</div>
+<script language="javascript">
+getViewNum(0,$id$);
+</script>
+$foot$
+
+</body>
+</html>

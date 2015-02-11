@@ -1,0 +1,88 @@
+﻿$head$
+
+<div id="content">
+<!--left-->
+$left$
+<script language="javascript" src="/js/validator.js"></script>
+<script>
+
+/*显示认证码 o start1*/
+function get_Code() {
+	var Dv_CodeFile = "/dvbbscode/Dv_GetCode.asp";
+	if(document.getElementById("imgid"))
+		document.getElementById("imgid").innerHTML = '<img src="'+Dv_CodeFile+'?t='+Math.random()+'" alt="点击刷新验证码" style="cursor:pointer;border:0;vertical-align:middle;" onclick="this.src=\''+Dv_CodeFile+'?t=\'+Math.random()" />'
+}
+/*o end*/
+</script>
+<!--right-->
+<div id="right">
+	<div class="daohang">当前您的位置：<a href="/" title="返回广州框体机供应,广州3D动物供应公司首页">首页</a> > 在线订购</div>
+	<div class="classTitle">
+    	<div class="classTitlelogo"></div>
+        <div class="classTitleWord"><a href="/order.$weburlext$" title="在线订购广州框体机,广州3D动物各类游戏机">在线订购</a>&nbsp;&nbsp;<span>Order</span></div>
+    </div>
+    <div class="intro">
+        <table width="98%" border="0"  cellpadding="2" cellspacing="0" align="center">
+         <form action="Demo_OrderPost.asp" method="post" name="form0" onSubmit="return Validator.Validate(this,2);">   
+          <tr> 
+              <td height="25" align="right" valign="top">&nbsp;&nbsp;客户名称:</td>
+              <td height="20" align="left"><input name="company" type="text" id="company2" size="40" maxlength="50" dataType="LimitB" min="2" max="20" msg="客户名称必须填写（2-20字符）">
+              <span class="red">*</span></td>
+            </tr>      
+          
+            <tr> 
+              <td height="25" align="right" valign="top">&nbsp;&nbsp;联系地址:</td>
+              <td height="20" align="left"><input name="addr" type="text" id="addr2" size="40" maxlength="50" dataType="LimitB" min="4" max="50" msg="联系地址必须填写（4-50字符）">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;&nbsp;联系电话:</td>
+              <td height="25" align="left"><input name="tel" type="text" id="tel2" size="40" maxlength="50" dataType="LimitB" min="4" max="50" msg="联系电话必须填写（4-50字符）">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;联系传真:</td>
+              <td height="25" align="left"><input name="fax" type="text" id="fax2" size="40" maxlength="50"></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;联 系 人:</td>       
+              <td height="25" align="left"><input name="linkman" type="text" id="linkman2" size="40" maxlength="50"></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;&nbsp;产品名称:</td>
+              <td height="25" align="left"><input name="proname" type="text" id="proname2" size="40" maxlength="50" value="$title$" dataType="LimitB" min="2" max="50" msg="产品名称不能为空（2-50字符）">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="25" align="right">&nbsp;&nbsp;产品编号:</td>
+              <td height="25" align="left"><input name="proxh" type="text" id="proxh2"  dataType="LimitB" min="2" max="50" msg="产品编号不能为空（2-50字符）" size="40" maxlength="50" value="$hh$">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="12" align="right">&nbsp;&nbsp;订购数量:</td>
+              <td height="-2" align="left"><input name="num" type="text" id="num2" dataType="Integer"  msg="订购数量必须为数字！" size="40" maxlength="50">
+                <span class="red">*</span></td>
+            </tr>
+            <tr> 
+              <td height="12" align="right" valign="top">&nbsp;备 　 注:</td>      
+              <td height="0" align="left"><textarea name="bz" cols="45" rows="7" id="textarea2" style="font-size:12px"></textarea></td>
+            </tr>
+            <tr> 
+              <td height="12" align="right" valign="top">&nbsp;验 证 码:</td>      
+              <td height="0" align="left"><input type="text" name="codestr"  onfocus="get_Code();return true;" />&nbsp;
+<div id="imgid" style="float:left"></div></td>
+            </tr>
+            <tr align="center" valign="middle"> 
+              <td height="30" colspan="2" align="center"><input type="submit" name="Submit2" value="确认" class="button"> 
+                &nbsp;&nbsp; <input type="reset" name="Submit2" value="重写" class="button"></td>      
+            </tr>            
+			</form>         
+        </table>
+    </div> 	
+    
+</div>
+</div>
+$foot$
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿
+/* QQ客服 */
+
+.QQbox{ z-index:99; width: 178px; left:820px; top: 145px; position: absolute;}
+
+.QQbox .press{ left:145px; border: none; cursor: pointer;width: 33px; height: 158px;position: absolute;}
+
+.QQbox .Qlist{ left: 0; width: 145px; background: url(qq_listbg.gif) repeat-y -155px 0;  position: absolute;}
+
+.QQbox .Qlist .t,
+
+.QQbox .Qlist .b{ float: right; height: 6px; width: 145px; font-size: 1px; }
+
+.QQbox .Qlist .t{ background: url(qq_listbg.gif) no-repeat left; }
+
+.QQbox .Qlist .b{ background: url(qq_listbg.gif) no-repeat right; }
+
+.QQbox .Qlist .con{ background: #fff; width: 90%; margin: 0 auto; }
+
+.QQbox .Qlist .con h2{  font: bold 12px/22px "宋体"; background: url(qq_listbg.gif) repeat-y -163px 0; border: 1px solid #3a708d; text-align: center; color:#fff;}
+
+.QQbox .Qlist .con ul{margin:0; padding:0; list-style-type:none}
+
+.QQbox .Qlist .con ul li{ margin:0; padding:0; list-style-type:none; text-align:center}
+
+/*.QQbox END*/
