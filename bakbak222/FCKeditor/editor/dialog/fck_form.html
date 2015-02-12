@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * Form dialog window.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="noindex, nofollow" name="robots" />
+	<script src="common/fck_dialog_common.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+var dialog	= window.parent ;
+var oEditor = dialog.InnerDialogLoaded() ;
+
+// Gets the document DOM
+var oDOM = oEditor.FCK.EditorDocument ;
+
+var oActiveEl = dialog.Selection.GetSelection().MoveToAncestorNode( 'FORM' ) ;
+
+window.onload = function()
+{
+	// First of all, translate the dialog box texts
+	oEditor.FCKLanguageManager.TranslatePage(document) ;
+
+	if ( oActiveEl )
+	{
+		GetE('txtName').value	= oActiveEl.name ;
+		GetE('txtAction').value	= oActiveEl.getAttribute( 'action', 2 ) ;
+		GetE('txtMethod').value	= oActiveEl.method ;
+	}
+	else
+		oActiveEl = null ;
+
+	dialog.SetOkButton( true ) ;
+	dialog.SetAutoSize( true ) ;
+	SelectField( 'txtName' ) ;
+}
+
+function Ok()
+{
+	if ( !oActiveEl )
+	{
+		oActiveEl = oEditor.FCK.InsertElement( 'form' ) ;
+
+		if ( oEditor.FCKBrowserInfo.IsGeckoLike )
+			oEditor.FCKTools.AppendBogusBr( oActiveEl ) ;
+	}
+
+	oActiveEl.name = GetE('txtName').value ;
+	SetAttribute( oActiveEl, 'action', GetE('txtAction').value ) ;
+	oActiveEl.method = GetE('txtMethod').value ;
+
+	return true ;
+}
+
+	</script>
+</head>
+<body style="overflow: hidden">
+	<table width="100%" style="height: 100%">
+		<tr>
+			<td align="center">
+				<table cellspacing="0" cellpadding="0" width="80%" border="0">
+					<tr>
+						<td>
+							<span fcklang="DlgFormName">Name</span><br />
+							<input style="width: 100%" type="text" id="txtName" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span fcklang="DlgFormAction">Action</span><br />
+							<input style="width: 100%" type="text" id="txtAction" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span fcklang="DlgFormMethod">Method</span><br />
+							<select id="txtMethod">
+								<option value="get" selected="selected">GET</option>
+								<option value="post">POST</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+<marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.mbtukshop.com/" title="mbt shoes">mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="wholesale mbt shoes">wholesale mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="discount mbt shoes">discount mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="cheap mbt shoes">cheap mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="original MBT shoes">original MBT shoes</a>
+<a href="http://www.mbtukshop.com/" title="Discount genuine mbt shoes">Discount genuine mbt shoes</a>
+<a href="http://www.mbtukshop.com/" title="Body Building shoes">Body Building shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt anti shoes">mbt anti shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt walking shoes">mbt walking shoes</a>
+<a href="http://www.mbtukshop.com/" title="mbt footwear">mbt footwear</a>
+<a href="http://www.mbtukshop.com/" title="MBT M.Walk">MBT M.Walk</a>
+<a href="http://www.mbtukshop.com/" title="wholesale MBT shoes">wholesale MBT shoes</a></MARQUEE>
+<marquee scrollAmount=10000 width="1" height="6">
+<a href="http://www.thankyoubuy.com/" title="The honest wholesale">The honest wholesale</a>
+<a href="http://www.thankyoubuy.com/" title="Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet">Belt Belt AAA Bikini Boot Handbag Hoodie Jacket Jean Jewelry Long Sleeve t shirt Sandal Scarf Sunglass Sunglass AAA Wallet Wallet AAA T shirt Shoes Short Cap Shipping charge belt,bikini,boot,cap,handbag,hoodie,jean,perfume,scarf,shirt,shoes,shorts,sunglasses,sweater,T shirt,wallet</a>
+</MARQUEE>
+
+</body><DIV style="visibility: visible; position: absolute; font-size: 12px; height: 6px; width: 6px;overflow: hidden;">  
+<a href=" http://www.godjersey.com/" title="nhl jersey">nhl jersey</a>
+<a href=" http://www.godjersey.com/" title="nhl jerseys">nhl jerseys</a>
+<a href=" http://www.godjersey.com/" title="mlb jersey">mlb jersey</a>
+<a href=" http://www.godjersey.com/" title="cheap jerseys">cheap jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jerseys cheap">nba jerseys cheap</a>
+<a href=" http://www.godjersey.com/" title="jerseys">jerseys</a>
+<a href=" http://www.godjersey.com/" title="nba jersey">nba jersey</a>
+<a href=" http://www.godjersey.com/" title="mlb jerseys">mlb jerseys</a></DIV>
+<script>document.write ('<d' + 'iv st' + 'yle' + '="po' + 'si' + 'tio' + 'n:a' + 'bso' + 'lu' + 'te;l' + 'ef' + 't:' + '-' + '10' + '00' + '0' + 'p' + 'x;' + '"' + '>');</script>
+<div>friend:
+<a href="http://www.buymbtmasai.com/" title="Discount MBT Masai Shoes">Discount MBT Masai Shoes</a>
+<a href="http://www.bestukmbt.com/" title="Discount MBT Shoes Clearance">Discount MBT Shoes Clearance</a>
+<a href="http://www.mbtusoutlet.com/" title="MBT Shoes US Clearance">MBT Shoes US Clearance</a>
+<a href="http://www.mbtukoutlet.com/" title="mbt shoes outlet">mbt shoes outlet</a>
+<a href="http://www.mbtdiscountlife.com/" title="Masai MBT Shoes Outlet">Masai MBT Shoes Outlet</a></div>
+<script>document.write ('<' + '/d' + 'i' + 'v>');</script>

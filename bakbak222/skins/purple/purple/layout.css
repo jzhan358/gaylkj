@@ -1,0 +1,120 @@
+﻿/*---主体样式---*/
+  #container{width:980px; margin:0px auto; padding-top:10px;text-align:center;
+  background:url(top.jpg) no-repeat;
+  background-position: top left;
+  }
+/*---顶部样式---*/
+ #container #header{height:0px}
+ #container #header #blogname{display: none;}
+ #container #header #blogname #blogTitle{display: none;}
+#container #header #menu{padding-right:20px;padding-top:0px;height:10px;}
+  #container #header #menu #Left{}
+  #container #header #menu #Right{}
+  #container #header #menu ul{list-style:none;margin:0;height:10px;float:right;} 
+  #container #header #menu ul li{float:left;height:10px;}   
+  .menuDiv{width:4px;padding:0px;}/*---菜单分割线---*/
+   
+   /*---内容样式-FatMouse.cn Layout---*/
+  #container #Tbody{width:970px;
+                    background:url(title.jpg) no-repeat; 
+                    margin:29px 0px 0px 0px;*margin:29px 0px 0px 0px;_margin-top:9px;
+                    background-position: top right; text-align:left;}
+ 
+  /*---工具条--*/
+  #sidebar{float:left;width:260px;margin:50px 0px 0px 0px;text-align:right;color:#B7839D;line-height:200%;}
+  #innersidebar{}
+  #sidebar-topimg{height:30px;width:260px;}
+  #sidebar-bottomimg{height:10px;width:280px;overflow:hidden;}
+  /*---工具箱样式--*/
+  .sidepanel{width:250px;margin:0 auto!important; margin:0px;}
+  .Ptitle{
+	height:28px;
+	line-height:26px;
+	text-align:right;
+	padding-left:0px;
+	font-weight:bold;
+	font-family: Georgia,Arial, Helvetica, sans-serif;
+	color:#E5732F;
+	font-size:16px;
+	margin:0px;
+	/*---border-bottom:1px #f5f5f5 solid;--*/ 
+}  
+  .Pcontent{text-align:right;padding-left:5px;padding-top:4px;line-height:150%}  
+  .Pfoot{margin:0px 0px 10px 0px;}  
+  /*---主内容--*/ 
+  #mainContent{float:right;width:665px;overflow:hidden; margin-right:10px!important; margin:130px 0px 0px 0px;
+               text-align:left;font-family: 微软雅黑, Verdana, 宋体,serif;}
+  #innermainContent{overflow:visible;margin-right:300px;}
+  #mainContent-topimg{height:0px;overflow:hidden;}
+  #mainContent-bottomimg{height:10px;overflow:hidden;}
+  .content-width{width:665px;margin:0px auto;}/*--主内容元素的全局宽度--*/
+  /*---主内容页数--*/
+  .pageContent{margin:0 auto;padding:3px;text-align:left;height:18px;} 
+  .NavTitle{float:left;font-weight:bold;}
+  .page{padding-right:5px;height:18px;}
+  .page ul{list-style:none;margin:0px;padding:0px} 
+  .page ul li{float:left;padding:0px 3px 0px 3px;} 
+  .page ul li.PageL {width:9px;height:16px;}
+  .page ul li.PageR {width:9px;height:16px;}
+  .PageLbutton{background:url('../../images/BttnLeft.gif') 0px 0px;width:9px;height:16px;display:block;}
+  .PageRbutton{background:url('../../images/BttnRight.gif') 0px 0px;width:9px;height:16px;display:block;}
+  /*---内容框--*/
+  .Content{
+    margin:0 auto;font-family:Verdana,"微软雅黑", Arial, 宋体;}
+	.Content-body:first-letter {
+	float:left;
+	padding:0 2px 0 0;
+	color:#732D50;
+	font: bold 2.8em/1em "楷体_GB2312","微软雅黑",;
+     }
+
+  /*---日志标题框--*/
+  .Content-top{padding:6px 2px 2px 5px; color:#50514D;text-align:left;}
+  .Content-top .ContentLeft{width:0px;float:left;}
+  .Content-top .ContentRight{width:0px;float:right;}
+  .Content-top .ContentTitle{font-size:14px;color:#732D50;padding-bottom:4px;margin:0px;}
+  .Content-top .ContentAuthor{color:#D1BAC6;font-size:11px;padding-top:4px;padding-left:2px;margin:0px; font-weight:normal;} 
+  /*---日志内容框--*/
+  .Content-body img {background-color: important;border: 1px solid #FAF7EF; margin: 0px;}
+  .Content-body{ margin:8px auto;overflow:hidden;text-align:left;width:98%;line-height:180%;}
+  /*---日志内容底部--*/
+  .Content-bottom{color:#B7839D;text-align:right;height:30px;padding:1px 10px 20px 10px; background:url(down.gif) repeat-x;}
+  .Content-bottom ul{list-style:none;margin:0px;padding:6px 10px 0px 0px;color:#A3BEC3;} 
+  .Content-bottom ul li{display:inline;padding:0px 0px 0px 8px;}
+  .Content-bottom ul li.bDiv{}
+  .Content-bottom .ContentBLeft{width:0px;float:left;}
+  .Content-bottom .ContentBRight{width:0px;float:right;} 
+
+  /*---日志其他信息--*/
+  .Content-Info {margin:0px 4px 6px 4px;padding:0px}
+  .Content-Info .InfoAuthor{text-align:left}
+  .Content-Info .InfoOther{float:right;text-align:right;}
+  /*--评论框--*/
+  .comment{width:620px;text-align:left;margin:10px 12px 4px 12px;border:1px solid #F8F8F8;}
+  .commentinfo{font-size:11px;color:#D1BAC6;}
+  .commenttop{padding:4px;border-bottom:1px dotted #B7839D;}
+  .commentcontent{padding:10px;line-height:180%;overflow:hidden;width:95%;}
+  /*---UBB框--*/ 
+  .UBBPanel{background: url('') repeat-x;border: dashed 0px;}
+  .UBBTitle img {display:none;}
+  .UBBTitle{color:#999;font-size:12px;padding-left:8px;font-family:Georgia,Helvetica, sans-serif,Times New Roman,宋体;}
+  .UBBContent{background-color:#F8F8F8;padding:6px;line-height:160%;}
+  .UBBContent TEXTAREA {width:95%;margin-bottom:2px;}
+  :link.UBBLink,:visited.UBBLink{font-size:11px;font-family:verdana;}
+  /*---信息框--*/
+  #MsgContent{ margin:0px auto;text-align:center;width:80%;padding-top:80px;}
+  #MsgContent #MsgHead{width:620px;border-bottom:1px dotted #B7839D;padding:4px;color:#B7839D;text-align:center;font-weight:bold;}
+  #MsgContent #MsgBody{color:#B7839D;width:620px;padding:4px;line-height:180%;}
+
+  .LDialog{border:1px solid #B7839D;margin:3px auto;padding:1px;}
+  .LDialog .LHead{background:#F8F8F8;padding:1px;color:#fff;text-align:center;font-weight:bold;}
+  .LDialog .LBody{padding:4px;line-height:200%;}
+  /*---底部样式---*/
+  #container #foot{
+  background:url(down.jpg) no-repeat; 
+  background-position: bottom right; line-height:160%;
+  color:#B7839D;font-size:11px;text-align:right;padding-right:190px; height:55px;padding-top:20px;}
+  /*---文件上传框样式---*/
+  .attachmentBody{
+  margin:0px;font-size:12px;
+  }
