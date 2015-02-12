@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /data
+Disallow: /dvbbscode
+Disallow: /kindeditor
+
+Sitemap:http://www.gaylkj.com/sitemap.xml

